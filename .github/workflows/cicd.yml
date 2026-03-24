@@ -81,7 +81,7 @@ jobs:
         with:
            context: ./web
            dockerfile: ./web/Dockerfile
-           push: ${{github.ref == 'refs/head/main' }}
+           push: ${{github.ref == 'refs/heads/main' }}
            tags: |
              ${{env.Web_name}}:latest
              ${{env.Web_name}}:${{github.sha}}
