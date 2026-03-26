@@ -114,6 +114,8 @@ jobs:
           script: |
             cd /opt/todo
 
+            docker-compose down
+            
             docker-compose pull
 
             docker-compose up -d --remove-orphans
